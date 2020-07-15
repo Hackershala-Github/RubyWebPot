@@ -33,7 +33,7 @@ def honeyconfig(port, message, sound, log, logname) # Function to launch the Hon
 				# If log is enabled, writes Honeypot activation time.
 				begin
 					File.open(logname, "a") do |logf|
-						logf.puts "####################  Honeypot log"
+						logf.puts "####################  pot log"
 						logf.puts ""
 						logf.puts "  HONEYPOT ACTIVATED ON PORT #{port} (#{Time.now.to_s})"
 						logf.puts ""
