@@ -1,4 +1,4 @@
-#################### PenTBox Honeypot log
+#################### Box Honeypot log
 
   HONEYPOT ACTIVATED ON PORT 80 (2020-07-15 17:04:33 +0530)
 
