@@ -1,6 +1,6 @@
 # July2020-Shubham-Honeypot
  
-This project contains a honeypot to monitoring actions are being made by any suspicous user
+This project contains a honeypot to monitoring actions are being made by any suspicious user
 
 # NOTENOTE
 THIS IMAGE PURELY MEANT FOR MONITORING WEBSITE
