@@ -41,15 +41,7 @@ Ruby
 ![Initial](https://github.com/P-riyanka-prasad/IIEC-RISE-DOCKER-1.0-HackTools/blob/master/5.jpg)
 
 
-
-
-# Requirements/Installation
-These instructions will get you a copy of the project up and running on your local machine
-
-* ## Make sure you have the latest versions of Docker installed on your machine.
-For installing run the commands:
-
-# For Docker Installation on RedHat/Centos:
+## How to use with Docker (RedHat/Centos):
  Prerequisite-yum configured-
 * login as root, open terminal
 * Run command- `cd /etc/yum.repos.d/`
@@ -73,8 +65,7 @@ systemctl start docker
 ```
 ![demo](https://github.com/xavier9909/hacktools/blob/master/start%20n%20enable%20docker.png)
 
-# BONUS
-# Install Docker on Windows 7
+## Install Docker on Windows 7
  * Verify your Windows OS is 64-bit (x64)
  * Install DOCKER TOOLBOX
  * Link:::(https://github.com/docker/toolbox/releases)
@@ -88,6 +79,3 @@ systemctl start docker
 ```
 docker pull xavier9909/honey:1
 ```
-=======
-Ruby Based Web Server Honepot
-
