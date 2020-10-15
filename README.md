@@ -1,113 +1,45 @@
-# RubyWebPot
+# Ruby Based Web Server Honepot
 
-This project contains a honeypot to monitoring actions are being made by any suspicious user.
+This project contains a honeypot that is used to monitor any actions performed by any suspicious user.
 
-## Requirements
-`ruby`
+# NOTE
 
-## How to use
+THIS IMAGE PURELY MEANT FOR MONITORING WEBSITE
+# Tech Stack
+Ruby
+# Initial Setup
+1) Make sure you have ruby in your system.
+2) Clone this repository https://github.com/Hackershala-Github/RubyWebPot.git
 
-1. Clone the project.
+# How To Use
 
-2. Run the file `pentbox.rb` in path honey.
-Note: if necessary run with the sudoers permission.
+1) Go to the location where you have cloned this repository.
+2) Run the script "pentbox.rb" 
 
-3. Set the configuration, example:
-Choice the first option (1 - Honeypot)
-```console
- $ ruby pentbox.rb
-                                     .::!!!!!!!:.
-  .!!!!!:.                        .:!!!!!!!!!!!!
-  ~~~~!!!!!!.                 .:!!!!!!!!!UWWW$$$
-      :$$NWX!!:           .:!!!!!!XUWW$$$$$$$$$P
-      $$$$$##WX!:      .<!!!!UW$$$$   $$$$$$$$#
-      $$$$$  $$$UX   :!!UW$$$$$$$$$   4$$$$$*
-      ^$$$B  $$$$      $$$$$$$$$$$$   d$$R*
-        **$bd$$$$      '*$$$$$$$$$$$o+#
-             ****          *******
+![Initial](https://github.com/P-riyanka-prasad/IIEC-RISE-DOCKER-1.0-HackTools/blob/master/1.jpg)
 
-1- Honeypot
+3) Select Option 1 Honeypot
 
-0- Exit
+4) You can either Select Fast Auto Configuration or Manual Configuration.
+- Select Fast Auto Configuration if you want the default setup.
+- Select the manual configuration if you don't have the ruby installation in your user root or you haven't permissions like sudoers.
 
-   -> 1
-```
+![Initial](https://github.com/P-riyanka-prasad/IIEC-RISE-DOCKER-1.0-HackTools/blob/master/2.jpg)
 
-4. Choice the manual configuration if you don't have the ruby installation in your user root or you haven't permissions like sudoers.
-```console
-// Honeypot //
+5) In Manual Configuration type the port number and the error message that you want to show.
 
-You must run PenTBox with root privileges.
+![Initial](https://github.com/P-riyanka-prasad/IIEC-RISE-DOCKER-1.0-HackTools/blob/master/3.jpg)
 
- Select option.
+6) Select the other features that you want or not according to you. 
 
-1- Fast Auto Configuration
-2- Manual Configuration [Advanced Users, more options]
+![Initial](https://github.com/P-riyanka-prasad/IIEC-RISE-DOCKER-1.0-HackTools/blob/master/4.jpg)
 
-   -> 2
-```
+7) Now your Honeypot is configured sucessfully.
 
-5. Next, set what port you want to open to monitoring.
-```console
- Insert port to Open.
+- You will get all the logs if any action is performed by any suspicious user.
 
-   -> 3000
-```
+![Initial](https://github.com/P-riyanka-prasad/IIEC-RISE-DOCKER-1.0-HackTools/blob/master/5.jpg)
 
-6. Set the false message you want to show
-```console
- Insert false message to show.
-
-   -> Alert false message example
-
-```
-
-7. If you want save logs set the option "y".
-```console
- Save a log with intrusions?
-
- (y/n)   -> y
-```
-
-8. If you choice the "y" upward and you want to change the file path, set the new path:
-```console
- Log file name? (incremental)
-
-Default: */pentbox/other/log_honeypot.txt
-
-   -> /home/example/honeypot.txt
-```
-
-9. If you want to listen sound alarm, set the option "y":
-```
- Activate beep() sound when intrusion?
-
- (y/n)   -> y
-```
-
-10. Now, your HONEYPOT're confirated with successful, you'll receive this message:
-```console
-  HONEYPOT ACTIVATED ON PORT 3000 (2020-10-13 21:47:04 -0300)
-```
-
-## Usage
-We need to open the browser and conect that port we did set in the configuration, or you could use another softwares to make the test, for example `curl`:
-```console
- $ curl -X GET localhost:3000
-```
-
-The return will be like this:
-`Alert false message example%`
-
-And the log file like this:
-```console
-  INTRUSION ATTEMPT DETECTED! from 127.0.0.1:56504 (2020-10-13 21:51:11 -0300)
- -----------------------------
-GET / HTTP/1.1
-Host: localhost:3000
-User-Agent: curl/7.64.0
-Accept: */*
-```
 
 ## How to use with Docker (RedHat/Centos):
  Prerequisite-yum configured-
