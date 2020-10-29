@@ -147,3 +147,8 @@ systemctl start docker
 ```
 docker pull xavier9909/honey:1
 ```
+
+# Example usage of Docker image
+```
+docker run -it --rm -p 3000:3000 xavier9909/honey:1
+```
